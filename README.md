@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/cyfx/webhook">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="120" height="120">
   </a>
   <p align="center">
     基于github/gitlab的webhook接收更新
@@ -32,6 +32,7 @@
 * [产品规划](#产品规划)
 * [贡献](#贡献)
 * [License](#license)
+* [捐赠](#捐赠)
 
 
 
@@ -86,7 +87,7 @@ $keys = [
         ]，
     ];
 ```
-4. 到github/gitlab配置webhooks  
+4. 到github/gitlab配置webhooks
 路径是setting > webhooks, 新建钩子。 Payload URL填写通知域名, 默认项目更新可以不用加project参数
 ```
 http://你的域名/webhook.php?project=project2
@@ -95,7 +96,7 @@ http://你的域名/webhook.php?project=project2
 
 **secret记得要配置和代码里面的一致**
 
-<img src="images/webhook.jpg" alt="webhook" width="600">
+<img src="images/webhook.jpg" alt="webhook" width="100%">
 
 5. 现在提交下git就会自动触发更新了。
 
@@ -120,8 +121,10 @@ github提供最近提交的事件细节，可以进入钩子详情，查看githu
 
 <!-- CONTRIBUTING -->
 ## 贡献
-
 [@cyfx](https://github.com/cyfx)
+
+
+
 
 
 <!-- LICENSE -->
@@ -141,3 +144,9 @@ The code for Payment is distributed under the terms of the MIT license (see [LIC
 
 <!-- ACKNOWLEDGEMENTS -->
 ## 致谢
+
+
+## 捐赠
+如果你觉得这个项目有用，你可以给作者买一杯果汁🍹
+
+<img src="images/wepay.png" alt="pay" width="300">
