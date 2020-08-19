@@ -106,9 +106,20 @@ http://你的域名/webhook.php?project=project2
 代码push到github/gitlab,就会触发webhooks,然后会触发webhook.php，执行git拉取命令。
 
 ### 调试
+**1. 调试接口**
 
 github提供最近提交的事件细节，可以进入钩子详情，查看github请求头和body参数，以及请求响应。更新错误的时候，可以通过重发事件请求，来重现bug。
 
+**2. 失败问题**
+
+如果一直更新失败，一般是权限问题，或者用户密钥问题
+进入项目目录,执行下面的命令，如果有权限问题，处理好，之后就可以使用了
+```
+sudo -u www git pull
+```
+**3. 密钥认证失败**
+
+github的用户ssh密钥/home/www/目录下的.ssh要有，这样就才不用有密钥错误
 
 
 <!-- ROADMAP -->
